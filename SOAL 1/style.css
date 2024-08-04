@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Header styling */
+header {
+    background-color: #043156; /* Teal color for a fresh look */
+    color: #fff;
+    padding: 32px 0; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px; /* Larger font size for prominence */
+    margin: 0;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #b0d0e7; /* Slightly darker teal for navigation */
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 24px; /* Increased margin for better spacing */
+}
+
+nav ul li a {
+    color: #043156;
+    text-decoration: none;
+    padding: 12px 24px; /* Adjusted padding */
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold; /* Bold text for better readability */
+}
+
+nav ul li a:hover {
+    background-color: #608fb7; /* Darker teal for hover effect */
+    color: #fff; /* Light yellow for hover effect */
+}
+
+/* Main content styling */
+main {
+    padding: 32px;
+    max-width: 100%; /* Make full use of available width */
+    width: 100%; /* Extend to full width */
+    margin: 0 auto; /* Center align horizontally */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow main to grow and fill available space */
+    text-align: center; /* Center-align text in main content */
+}
+
+/* General section styling */
+section {
+    margin-bottom: 32px; /* General margin for spacing */
+    padding: 32px; /* General padding for content */
+    background-color: #fff; /* Default background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light shadow for sections */
+}
+
+/* Specific section styling if needed */
+/* Example:
+section#specific {
+    background-color: #e0e0e0; 
+}
+*/
+
+/* Heading styling */
+main h2, section h2 {
+    margin-bottom: 16px;
+    font-size: 40px; /* Increased font size */
+    color: #043156; /* Match navigation color */
+    text-align: center; /* Center-align section headings */
+}
+
+main p, section p {
+    font-size: 18px; /* Slightly larger font size */
+    line-height: 1.8;
+    margin-bottom: 16px;
+    text-align: center; /* Center-align paragraphs */
+}
+
+/* Skills section styling */
+#skills {
+    background-color: #b0d0e7; /* Light teal background for the skills section */
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox to display items horizontally */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+    gap: 24px; /* Space between items */
+}
+
+#skills ul li {
+    font-size: 18px; /* Slightly larger font size */
+    display: flex; /* Flex to align items horizontally */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center-align items horizontally */
+    gap: 12px; /* Space between icon and text */
+    background-color: #fff; /* White background for the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for the box */
+    width: 150px; /* Fixed width for each box */
+    height: 150px; /* Fixed height for each box */
+    box-sizing: border-box; /* Include padding in the box size */
+}
+
+.skill-icon {
+    width: 60px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Address styling */
+address {
+    font-style: normal;
+    margin-top: 16px;
+    text-align: center; /* Center-align address */
+}
+
+address p {
+    margin-bottom: 8px;
+}
+
+address a {
+    color: #00796b; /* Match navigation color */
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #043156; /* Match header color */
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px; /* Adjusted font size */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    footer {
+        padding: 8px 0;
+    }
+}
+
+/* Profile photo styling */
+.profile-photo {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the photo circular */
+    display: block; /* Center-align the photo */
+    margin: 0 auto 16px; /* Center-align and add margin below */
+}
